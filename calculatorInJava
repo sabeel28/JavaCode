@@ -1,0 +1,42 @@
+//wap to make calculator using basic knowlegde of java
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        //input from the user 
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int operation = sc.nextInt();
+        switch(operation){
+            case 1:
+                int sum = a+b;
+                System.out.print(sum);
+                break;
+            case 2:
+                int sub = a-b;
+                System.out.print(sub);
+                break;
+            case 3:
+                int mul = a*b;
+                System.out.print(mul);
+                break;
+            case 4:
+                if(b!=0){
+                    System.out.print(a%b);
+                }else
+                    System.out.print("invalid operation");
+                break;
+            case 5:
+                if(b!=0){
+                    System.out.print(a/b);
+                }else{
+                    System.out.print("invalid operation");
+                }
+                break;
+            
+            default:System.out.print("out of choice");
+        }
+    }
+}
