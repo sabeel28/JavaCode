@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class test {
+public class solidRhombus {
     public static void main(String[] args) {
         int n = 4;
         //solid rhombus
