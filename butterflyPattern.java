@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class test {
+public class butterflyPattern {
     public static void main(String[] args) {
         int n = 4;
         //upper half
