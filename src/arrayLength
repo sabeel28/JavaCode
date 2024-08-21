@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class Arrays {
+    public static void main(String[] args){
+        
+        int[] num=new int[10];
+        System.out.println(num.length);//num.length=size of an array
+    }
+}
+//output 10
