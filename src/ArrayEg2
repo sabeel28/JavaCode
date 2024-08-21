@@ -1,0 +1,13 @@
+public class Arrays {
+    public static void main(String[] args){
+        int marks[]=new int[3];//size of the array
+
+        marks[0]=95;//marks of english
+        marks[1]=97;//physics
+        marks[2]=95;//chemistry
+        
+        for (int i=0;i<3;i++){
+            System.out.println(marks[i]);
+        }
+    }
+}
