@@ -1,0 +1,10 @@
+public class Arrays {
+    public static void main(String[] args){
+        //array define(2)
+        int marks[]={98,34,85};
+
+        for (int i=0;i<3;i++){
+            System.out.println(marks[i]);
+        }
+    }
+}
