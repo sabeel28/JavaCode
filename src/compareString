@@ -12,3 +12,14 @@ public class Strings {
         }
     }
 }
+//public class Strings {
+//    public static void main(String[] args) {
+//       String name1="Tony";
+//       String name2="Xony";
+//       if(name1.equals(name2)){
+//           System.out.println("strings are equal");
+//       }else{
+//           System.out.println("strings are not equal");
+//       }
+//    }
+//}
