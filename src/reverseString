@@ -15,3 +15,12 @@ public class Strings {
         System.out.println(sb);
     }
 }
+//Another way todo:
+//public class Strings {
+//    public static void main(String[] args) {
+//        // Reverse the string: "hello" -> "olleh"
+//        StringBuilder sb = new StringBuilder("World");
+//        sb.reverse();
+//        System.out.println(sb);
+//    }
+//}
