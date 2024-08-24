@@ -1,0 +1,85 @@
+break down of code step by step:
+
+```java
+public class Strings {
+    public static void main(String[] args){
+        // Reverse the string: "hello" -> "olleh"
+        StringBuilder sb = new StringBuilder("hello");
+
+        for(int i = 0; i < sb.length() / 2; i++){
+            int front = i;
+            int back = sb.length() - 1 - i;
+
+            char frontChar = sb.charAt(front);
+            char backChar = sb.charAt(back);
+
+            sb.setCharAt(front, backChar);
+            sb.setCharAt(back, frontChar);
+        }
+
+        System.out.println(sb);
+    }
+}
+```
+
+### Explanation:
+
+1. **StringBuilder Initialization:**
+   ```java
+   StringBuilder sb = new StringBuilder("hello");
+   ```
+   - You initialize a `StringBuilder` object with the string "hello". 
+`StringBuilder` is mutable, meaning you can modify its content without creating a new object.
+
+2. **For Loop:**
+   ```java
+   for(int i = 0; i < sb.length() / 2; i++){
+   ```
+   - The loop runs from `i = 0` to `i < sb.length() / 2`. This means it only iterates over the first half of the string. 
+The reason for this is that when reversing a string, you only need to swap the first half with the second half.
+
+3. **Swapping Characters:**
+   ```java
+   int front = i;
+   int back = sb.length() - 1 - i;
+   ```
+   - `front` is the index of the current character from the start of the string.
+   - `back` is the index of the corresponding character from the end of the string.
+
+   ```java
+   char frontChar = sb.charAt(front);
+   char backChar = sb.charAt(back);
+   ```
+   - `frontChar` stores the character at the `front` index.
+   - `backChar` stores the character at the `back` index.
+
+   ```java
+   sb.setCharAt(front, backChar);
+   sb.setCharAt(back, frontChar);
+   ```
+   - The `setCharAt` method is used to replace the character at a specific index in the `StringBuilder`.
+   - You swap the characters at `front` and `back` indices.
+
+4. **Output the Result:**
+   ```java
+   System.out.println(sb);
+   ```
+   - After the loop finishes, the `StringBuilder` contains the reversed string, which is then printed out.
+
+### How It Works:
+
+- **First Iteration:** 
+  - `i = 0`, `front = 0`, `back = 4`.
+  - Swap characters at indices `0` and `4` -> "oellh".
+
+- **Second Iteration:** 
+  - `i = 1`, `front = 1`, `back = 3`.
+  - Swap characters at indices `1` and `3` -> "olleh".
+
+- The loop stops because `i` becomes `2`, which is equal to `sb.length() / 2`. The string is now fully reversed.
+
+### Summary:
+
+Your code manually swaps characters from the start and end of the string, working towards the center, effectively reversing the string. 
+This approach demonstrates how to reverse a string without using built-in methods, which is a useful exercise for understanding how string 
+manipulation works at a lower level in Java.
