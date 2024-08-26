@@ -1,0 +1,7 @@
+public class operators {
+    public static void main(String[] args){
+        int a=8;//1000
+        int b=9;//1001
+        System.out.println(a&b);//1000
+    }
+}
