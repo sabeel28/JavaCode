@@ -1,0 +1,9 @@
+public class operators {
+    public static void main(String[] args) {
+        int n = 5;//(0101) base 10=(5) base 2
+        int pos = 1;
+        int BitMask = 1 << pos;//0001
+        int number=BitMask | n;
+        System.out.println(number);
+    }
+}
