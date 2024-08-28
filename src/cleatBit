@@ -1,0 +1,10 @@
+public class operators {
+    public static void main(String[] args){
+        int n=5;//0101
+        int pos=2;
+        int BitMask=1<<pos;//0001<<2->0100
+        int notBitMAsk=~(BitMask);
+        int number=notBitMAsk & n;
+        System.out.println(number);
+    }
+}
