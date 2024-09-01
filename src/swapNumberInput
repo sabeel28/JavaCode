@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.print("value of x before swapping: ");
+	    int x=sc.nextInt();
+	    System.out.print("value of y before swapping: ");
+	    int y=sc.nextInt();
+	    
+		int t;
+		//swap
+		t=x;
+		x=y;
+		y=t;
+  
+		System.out.println("value of x after swapping: "+x);
+		System.out.println("value of y after swapping: "+y);
+
+	}
+}
