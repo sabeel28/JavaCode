@@ -16,3 +16,4 @@ public class printFactorial{
         //     fact=fact*i;
         // }
         // System.out.print("factorial of "+n+" = "+fact);
+#factorial using while loop
